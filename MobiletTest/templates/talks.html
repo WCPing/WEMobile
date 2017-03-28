@@ -1,0 +1,81 @@
+<ion-view view-title="WE Life">
+    <ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-person" id="myIcon"></button>
+    </ion-nav-buttons>
+
+     <!--右侧发动态图标-->
+    <ion-nav-buttons side="right">
+        <button class="button button-icon icon ion-camera" ng-click="show()"></button>
+    </ion-nav-buttons>
+
+    <ion-content>
+            <div class="talkTopCover">
+                <div>
+                    <img src="lib/img/wcp.jpg">
+                </div>
+            </div>
+
+        <!--动态-->
+            <div class="talkList">
+                <div>
+                    <img src="lib/img/xml.jpg">
+                </div>
+                <div>
+                    <label>徐美丽</label>
+                    <label>2017-03-23 12:23</label>
+                    <div class="talkContent">
+                        看这美丽的小区，美到窒息，我不知道说啥了，反正你看我写的就对了.
+                    </div>
+                    <div>
+                        <img src="lib/img/bizhi66.jpg" class="talkImg">
+                    </div>
+                    <!--评论区-->
+                    <div class="talkComment">
+                            <div>
+                                <span>小橘子</span> :
+                                <span>风景不错哇！我都看到入迷了，反正你看我这么回你就行了</span>
+                            </div>
+                            <div class="talkComInput">
+                                <input type="text" placeholder="评论">
+                                <div id="sendMessage"></div>
+                            </div>
+                    </div>
+                </div>
+
+            </div>
+        <!--动态-->
+        <div class="talkList">
+            <div>
+                <img src="lib/img/li.jpg">
+            </div>
+            <div>
+                <label>Mc·李</label>
+                <label>2017-04-23 12:23</label>
+                <div class="talkContent">
+                    我想给他一颗糖，就先分给了他身边的所有人，最后才顺理成章的问他“吃糖吗？”喜欢是那么小心翼翼，就连询问也要做无数的铺垫。
+                </div>
+                <div>
+
+                </div>
+                <!--评论区-->
+                <div class="talkComment">
+                    <div>
+                        <span>吴长平</span> :
+                        <span>喜欢应当小心翼翼</span>
+                    </div>
+                    <div>
+                        <span>MC·李</span> :
+                        <span>是啊</span>
+                    </div>
+                    <div class="talkComInput">
+                        <input type="text" placeholder="评论">
+                        <div id="send"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </ion-content>
+</ion-view>

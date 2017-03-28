@@ -1,0 +1,54 @@
+<ion-view view-title="WE Community" animation="slide-left-right-ios7">
+
+    <ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-person" id="myIcon"></button>
+    </ion-nav-buttons>
+
+ <ion-content>
+
+<!--轮播图片-->
+<ion-slide-box active-slide="myActiveSlide" auto-play="true" slide-interval=2000  does-continue="true" delegate-handle="slideimgs">
+    <ion-slide>
+        <div><img src="lib/img/90001.png" width="100%" height="100%"/></div>
+    </ion-slide>
+    <ion-slide>
+        <div><img src="lib/img/90002.png" width="100%" height="100%"/></div>
+    </ion-slide>
+    <ion-slide>
+        <div><img src="lib/img/90003.png" width="100%" height="100%"/></div>
+    </ion-slide>
+</ion-slide-box>
+
+     <div class="row">
+         <div class="col col-33">
+           <a href="#" class="setting" style="background-color: #0881A3" ><img src="lib/img/gonggao.png" ><div>公告</div></a>
+         </div>
+         <div class="col col-33" style="margin-left: 0.1rem;">
+             <a href="#" class="setting" style="background-color:#FF006C" ><img src="lib/img/activity.png" ><div>活动</div></a>
+         </div>
+         <div class="col col-33" style="margin-left: 0.1rem;">
+             <a href="#/tab/news" class="setting" style="background-color:#1B8057" ><img src="lib/img/baike.png"><div>百科</div></a>
+         </div>
+     </div>
+
+     <div class="row">
+         <div class="col col-50">
+             <a href="#" class="settingBig" style="background-color: #41506B" ><img src="lib/img/ershou.png" ><div>闲置物品</div></a>
+         </div>
+         <div class="col col-50" style="margin-left: 0.1rem;">
+             <a href="#" class="settingBig" style="background-color:#F66e00" ><img src="lib/img/guzhang.png" ><div>故障保修</div></a>
+         </div>
+     </div>
+
+     <div class="row">
+         <div class="col col-50">
+             <a href="#/tab/talks" class="settingBig" style="background-color: #B90B0B" ><img src="lib/img/dongtai.png" ><div>生活动态</div></a>
+         </div>
+         <div class="col col-50" style="margin-left: 0.1rem;">
+             <a href="#" class="settingBig" style="background-color:#F95959" ><img src="lib/img/loat.png" ><div>失物招领</div></a>
+         </div>
+     </div>
+
+
+    </ion-content>
+</ion-view>

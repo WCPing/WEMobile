@@ -1,0 +1,68 @@
+
+
+<ion-side-menus>
+
+    <!--底部标签-->
+    <ion-pane ion-side-menu-content>
+
+        <ion-nav-bar class="bar-stable nav-title-slide-ios7">
+            <ion-nav-back-button class="button-clear"><i class="icon ion-chevron-left"></i> Back</ion-nav-back-button>
+        </ion-nav-bar>
+
+        <ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
+
+
+        <ion-tabs class="tabs-icon-top tabs-positive">
+
+            <ion-tab title="主页" icon="ion-home" href="#/tab/home">
+                <ion-nav-view name="home-tab"></ion-nav-view>
+            </ion-tab>
+
+            <ion-tab title="生活圈" icon="ion-aperture" href="#/tab/talks">
+                <ion-nav-view name="talks-tab"></ion-nav-view>
+            </ion-tab>
+
+            <ion-tab title="资讯" icon="ion-xbox" ui-sref="tabs.news">
+                <ion-nav-view name="news-tab"></ion-nav-view>
+            </ion-tab>
+            <!--
+             <ion-tab title="Mine" icon="ion-ios-world" ui-sref="tabs.mine">
+                 <ion-nav-view name="mine-tab"></ion-nav-view>
+             </ion-tab>
+            -->
+        </ion-tabs>
+    </ion-pane>
+
+    <!--个人中心-->
+    <ion-side-menu side="left">
+        <header class="bar bar-header bar-stable">
+            <img src="lib/img/Email.png" class="emailIcon"/>
+        </header>
+        <ion-content class="has-header">
+            <div class="myCenter">
+                <img src="lib/img/wcp.jpg" />
+                <div>外交部发言人</div>
+            </div>
+            <ion-list>
+                <ion-item nav-clear menu-close href="#/tab/home">
+                    <img src="lib/img/index.png" class="iconIcon">首页
+                </ion-item>
+                <ion-item nav-clear menu-close href="#/app/browse">
+                    <img src="lib/img/myActivity.png" class="iconIcon">我的活动
+                </ion-item>
+                <ion-item nav-clear menu-close href="#/app/browse">
+                    <img src="lib/img/myTalks.png" class="iconIcon">我的动态
+                </ion-item>
+                <ion-item nav-clear menu-close href="#/app/browse">
+                    <img src="lib/img/myBaoxiu.png" class="iconIcon">报修记录
+                </ion-item>
+                <ion-item nav-clear menu-close href="#/app/browse">
+                    <img src="lib/img/myXianZhi.png" class="iconIcon">闲置物品
+                </ion-item>
+                <ion-item nav-clear menu-close href="#/app/playlists">
+                    <img src="lib/img/password.png" class="iconIcon">修改密码
+                </ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>

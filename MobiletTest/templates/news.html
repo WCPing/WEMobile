@@ -1,0 +1,144 @@
+<ion-view title="WE News">
+
+    <ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-person"></button>
+    </ion-nav-buttons>
+
+    <ion-content>
+        <!--轮播图片-->
+        <ion-slide-box active-slide="myActiveSlide" auto-play="true" slide-interval=2000  does-continue="true" delegate-handle="slideimgs">
+            <ion-slide>
+                <div class="adsImg">
+                    <a href="#"><img src="lib/img/z2.jpg"/></a>
+                    <div>日本网友票选最想交往的十大女星 清纯与性感并存</div>
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="adsImg">
+                    <a href="#"><img src="lib/img/z22.jpg"/></a>
+                    <div>主播女流获赠定制版PS4 成首位印在主机上的中国人</div>
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="adsImg">
+                    <img src="lib/img/z222.jpg" width="100%" height="100%"/>
+                    <div>育碧否认泄漏截图是《刺客信条》</div>
+                </div>
+            </ion-slide>
+        </ion-slide-box>
+
+        <!--HOT-->
+        <div class="hotNews">
+            <div>
+                <img src="lib/img/hot.png">
+            </div>
+            <div>
+                <a href="#">你真的知道如何煲一碗鸡汤吗？</a>
+                <a href="#">2017年3月PC游戏发售预览 诸多超级大作震撼登场</a>
+            </div>
+        </div>
+
+        <!--游戏新闻标题-->
+        <div class="newTitStyle">
+            <span></span>  <!--颜色块状-->
+            <a href="#">新闻资讯</a>
+        </div>
+
+        <!--推荐或热点标题-->
+        <div class="comTitStyle">
+            <div>
+                <a ng-click="titleClick(0)" ng-class="{'selected':focusIndex==0}" class="selected">推荐</a>
+            </div>
+            <div>
+                <a ng-click="titleClick(1)" ng-class="{'selected':focusIndex==1}">热点</a>
+            </div>
+        </div>
+
+        <!--文章页-->
+        <!--推荐-->
+        <div class="recommendArticle" ng-hide="recHide">
+            <div class="articleDiv">
+                <div>
+                    <img src="lib/img/2b.jpg">
+                </div>
+                <div class="titCon">
+                    <div>
+                        黑丝福利 《尼尔：机械纪元》轩辕完整汉化速下载
+                    </div>
+                    <div>
+                        欢迎下载3DM轩辕汉化《尼尔: 机械纪元》简体汉化补丁2.0
+                    </div>
+                </div>
+            </div>
+            <div class="articleDiv">
+                <div>
+                    <img src="lib/img/2B2.jpg">
+                </div>
+                <div class="titCon">
+                    <div>
+                        《尼尔: 机械纪元》提升帧数Mod完整版已经推出
+                    </div>
+                    <div>
+                        Mod制作者日前在其FAR Mod(修复机械纪元分辨率/Fix AutoMata)
+                    </div>
+                </div>
+            </div>
+            <div class="articleDiv">
+                <div>
+                    <img src="lib/img/z1.jpg">
+                </div>
+                <div class="titCon">
+                    <div>
+                       Win10创造者更新推送延迟高达数月：理由无语
+                    </div>
+                    <div>
+                        来自AdDuplex发布的数据显示，去年8月份推送的“周年更新”花了数月时间，去年8月份推送的“周年更新”花了数月时间
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--热点-->
+        <div class="hotArticle" ng-hide="hotHide">
+            <div class="articleDiv">
+                <div>
+                    <img src="lib/img/h1.png">
+                </div>
+                <div class="titCon">
+                    <div>
+                        对话比尔·盖茨 世界首富将于今晚6点半在北大直播
+                    </div>
+                    <div>
+                        今天晚上6点30分，世界首富比尔·盖茨将会在中国做直播。届时比尔·盖茨。。。
+                    </div>
+                </div>
+            </div>
+            <div class="articleDiv">
+                <div>
+                    <img src="lib/img/h2.jpg">
+                </div>
+                <div class="titCon">
+                    <div>
+                        东山再起？网传微软移动设备部门开始扩招员工
+                    </div>
+                    <div>
+                        微软从收购诺基亚设备服务部门后就开始了针对移动部门的大规模裁员。
+                    </div>
+                </div>
+            </div>
+            <div class="articleDiv">
+                <div>
+                    <img src="lib/img/h3.jpg">
+                </div>
+                <div class="titCon">
+                    <div>
+                        库克证实国行红色iPhone收入将用于捐赠艾滋基金
+                    </div>
+                    <div>
+                        上周五，苹果面向四十多个国家提供红色特别版iPhone7.苹果称新手机颜值高。
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </ion-content>
+</ion-view>

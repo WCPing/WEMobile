@@ -1,0 +1,373 @@
+
+/*index.html*/
+.slider {
+    height: 40%;
+}
+.slider-slide {
+    color: #000;
+    background-color: #fff; text-align: center;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; font-weight: 300; }
+.blue {
+    background-color: blue;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.pink {
+    background-color: pink;
+}
+.box{
+    height:100%;
+}
+.box h1{
+    position:relative; top:50%; transform:translateY(-50%);
+}
+.col{
+    text-align: center;
+    height: 5rem;
+    vertical-align: middle;
+    display: table;
+}
+.setting{
+    display:table-cell;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    text-decoration: none;
+    border-radius: 10px;
+    position: relative;
+}
+.setting div{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0.3rem;
+    font-size: .6rem;
+    color:#ffffff;
+    font-family: '黑体';
+    font-weight: bold;
+}
+.settingBig{
+    display:table-cell;
+    width: 100%;
+    height: 4.8rem;
+    vertical-align: middle;
+    text-decoration: none;
+    border-radius: 10px;
+    position: relative;
+}
+.settingBig div{
+    position: absolute;
+    bottom: 0.3rem;
+    left: 0.6rem;
+    font-size: .6rem;
+    color:#ffffff;
+    font-family: '黑体';
+    font-weight: bold;
+}
+.personImg{
+    width: 100%;
+    height: 3rem;
+}
+
+/**********朋友圈***************/
+.talkTopCover{
+    width: 100%;
+    height:9rem;
+    background-image: url("../img/004.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+.talkTopCover > div{
+    position: absolute;
+    bottom: 0.4rem;
+    right: 0.5rem;
+}
+.talkTopCover > div >img{
+    width: 3.5rem;
+    height: 3.5rem;
+    display: inline-block;
+    border-radius: 50%;
+}
+/*动态大div*/
+.talkList{
+   width: 100%;
+    padding-bottom: .2rem;
+    border-bottom: 1px solid #ccc;
+}
+.talkList > div:first-child{
+    display: inline-block;
+    width: 2.5rem;
+    margin: 0.5rem 0.1rem 0.1rem 0.1rem;
+    vertical-align: top;
+}
+.talkList > div:first-child > img{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.talkList > div:nth-child(2){
+    margin-top: 0.5rem;
+    display: inline-block;
+    width: 13rem;
+    line-height: 1rem;
+}
+/*姓名*/
+.talkList > div:nth-child(2)> label:first-child{
+    display: block;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+    color: #1B5A7A;
+    margin-top: -0.2rem;
+    margin-left: 0.2rem;
+    font-size: .7rem;
+    font-family: '黑体';
+}
+/*Date*/
+.talkList > div:nth-child(2) > label:nth-child(2){
+    display: block;
+    height: 1.1rem;
+    line-height: 1.2rem;
+    line-height: 1.2rem;
+    margin-left:.2rem;
+}
+/*动态正文*/
+.talkContent {
+    width: 13rem;
+    margin-top: .3rem;
+    margin-bottom: 0.2rem;
+    line-height: 1.2rem;
+}
+.talkImg{
+    width: 10rem;
+    height: 6rem;
+}
+
+/*评论区*/
+.talkComment{
+    padding: .2rem;
+    background-color: #eeeeee;
+    width: 12.5rem;
+}
+.talkComment > div >span:first-child{
+     color: #2772DB;
+     font-size: .7rem;
+     font-family: '黑体';
+ }
+.talkComment > div >span:last-child{
+    font-size: .6rem;
+    font-family: '黑体';
+}
+.talkComInput{
+    margin-top: .1rem;
+    background-color: #ffffff;
+}
+.talkComInput > input{
+    width: 10rem;
+    height: 1.2rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+.talkComInput > div{
+    display: inline-block;
+    width: 1.1rem;
+    height: 1.1rem;
+    background-image: url("../img/send.png");
+    background-size: 100%;
+    vertical-align: middle;
+    margin-left: .3rem;
+}
+
+/****************资讯页********************/
+.adsImg{
+    position: relative;
+    width: 16rem;
+    height: 8rem;
+}
+.adsImg > img{
+    width: 16rem;
+    height: 8rem;
+}
+.adsImg > div{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 16rem;
+    height: 1.3rem;
+    background: rgba(0,0,0,0.3);
+    color: #ffffff;
+    line-height: 1.3rem;
+    text-align: center;
+    font-family: '黑体';
+    font-size: .6rem;
+}
+.hotNews{
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    width: 16rem;
+    height: 3rem;
+    background-color: #f2f2f2;
+}
+.hotNews > div:first-child{
+    display: inline-block;
+    width: 3.5rem;
+    height: 3rem;
+    vertical-align: top;
+    position: relative;
+}
+.hotNews > div:first-child > img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -24px;
+    margin-top: -24px;
+}
+
+.hotNews > div:last-child{
+    display: inline-block;
+    width: 12rem;
+    height: 3rem;
+}
+.hotNews > div:last-child > a{
+    display: block;
+    height: 12rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    text-decoration: none;
+    overflow: hidden;
+    color:#2d2d2d;
+}
+/**************游戏新闻标题**********************/
+.newTitStyle{
+    width: 16rem;
+    height: 1.5rem;
+    border-bottom: 1px solid #cccccc;
+    background-color: #f2f2f2;
+}
+.newTitStyle > span{
+    display: inline-block;
+    width: .25rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    background-color: #FC993C;
+    margin-left: .4rem;
+    vertical-align: middle;
+    border-radius: 10px;
+}
+.newTitStyle > a{
+    display: inline-block;
+    width: 5rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    text-decoration: none;
+    vertical-align: middle;
+    font-size: .8rem;
+    margin-left: .3rem;
+    color: #000000;
+    font-weight: bold;
+}
+
+/************推荐或者热点**************/
+.comTitStyle{
+    width: 16rem;
+    height: 2rem;
+}
+.comTitStyle > div{
+    display: inline-block;
+    width: 7.9rem;
+    height: 2rem;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 2rem;
+}
+.comTitStyle > div > a{
+    width: 2.5rem;
+    height: 1.9rem;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: .8rem;
+    color: #666666;
+
+}
+.comTitStyle > div > .selected{
+    border-bottom: 1px solid #3BB4C1;
+    font-weight: bold;
+}
+
+/**********新闻列表区****************/
+.articleDiv{
+    width: 16rem;
+    height: 5rem;
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #cccccc;
+    padding: .4rem;
+}
+.articleDiv >div:first-child{
+    width: 5.5rem;
+    height: 4.6rem;
+    display: inline-block;
+    vertical-align: top;
+}
+.articleDiv >div:first-child >img{
+    width: 5.5rem;
+    height: 4.2rem;
+}
+.titCon{
+    width: 9.5rem;
+    height: 4.6rem;
+    display: inline-block;
+    padding-left: .2rem;
+    padding-top: .1rem;
+    font-family: '黑体';
+}
+.titCon > div:first-child{
+    height: 2.3rem;
+    line-height: 1rem;
+    font-size: .7rem;
+    color: #233142;
+    overflow: hidden;
+}
+.titCon > div:last-child{
+    color: #666;
+    height: 2.2rem;
+    line-height: 1rem;
+    overflow: hidden;
+
+}
+/*********个人中心****************/
+.emailIcon{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 9.5rem;
+    margin-top: .2rem
+}
+.iconIcon{
+    width:1rem;
+    height: 1rem;
+    vertical-align: middle;
+    margin-right: .5rem;
+}
+.myCenter{
+    width: 100%;
+    height: 6rem;
+    background-color: #4AA9AF;
+}
+.myCenter > img{
+    width: 30%;
+    margin-left: .3rem;
+    margin-top: .1rem;
+    display: block;
+    border-radius: 50%;
+}
+.myCenter > div{
+    width: 6rem;
+    height: 1rem;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: .7rem;
+    margin-top: .6rem;
+    margin-left: .5rem;
+}

@@ -1,1 +1,1 @@
-first git
+This is a static mobile page in my team project WECommunity.

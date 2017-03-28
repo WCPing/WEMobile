@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="ionicApp">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>weText页面</title>
+    <link href="lib/css/ionic.css" rel="stylesheet">
+    <link href="lib/css/myCss.css" rel="stylesheet">
+    <script src="lib/js/ionic.bundle.min.js"></script>
+    <script src="lib/js/we/service.js"></script>
+    <script src="lib/js/we/controller.js"></script>
+    <script src="lib/js/we/app.js"></script>
+    <script type="text/javascript">
+        (function(){
+            var column_count = 16;
+            var screen_width = screen.width;
+            var font_size = screen_width / column_count;
+            document.querySelector('html').style.fontSize = font_size + 'px';
+        })();
+    </script>
+</head>
+
+<body>
+<ion-nav-bar class="bar-positive">
+    <ion-nav-back-button>
+    </ion-nav-back-button>
+</ion-nav-bar>
+
+<ion-nav-view></ion-nav-view>
+
+</body>
+</html>
